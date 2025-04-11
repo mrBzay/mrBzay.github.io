@@ -4058,7 +4058,7 @@ img.u-pull-left {
 
 .contact-links,
 .contact-social {
-    font-size   : var(--text-md);
+    font-size   : var(--text-size);
     font-weight : 300;
     line-height : var(--vspace-1_25);
     color       : var(--color-text-light);
@@ -4077,8 +4077,12 @@ img.u-pull-left {
 }
 
 .contact-social {
-    list-style  : none;
-    margin-left : 0;
+    font-size   : var(--text-lg);
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for alignment */
+    gap: 15px; /* Add spacing between icons */
 }
 
 .contact-social li {
@@ -4086,9 +4090,9 @@ img.u-pull-left {
     padding-left : 0;
 }
 
-.contact-social li::after {
+/* .contact-social li::after {
     content : ",  ";
-}
+} */
 
 .contact-social li:last-child::after {
     display : none;
